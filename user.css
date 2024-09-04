@@ -1,0 +1,149 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: linear-gradient(100deg, rgba(94,206,241,1) 0%, rgba(101,172,237,1) 22%, rgba(87,150,235,1) 38%, rgba(85,102,237,1) 57%, rgba(102,114,251,1) 78%, rgba(80,99,173,1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.form-container {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 100%;
+    max-width: 400px;
+    position: relative;
+}
+
+h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+.box {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.box:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.25);
+    outline: none;
+}
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(45deg, #007bff, #0056b3);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+    background: linear-gradient(45deg, #0056b3, #003d7a);
+    transform: scale(1.02);
+}
+
+.option-btn {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    color: #007bff;
+    font-size: 16px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.option-btn:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+p {
+    text-align: center;
+    color: #555;
+    font-size: 16px;
+    margin-top: 15px;
+}
+.message {
+    position: sticky;
+    top: 0;
+    max-width: 800px; /* Adjusted max-width */
+    margin: 0 auto;
+    background-color: rgba(199, 199, 199, 0.486);
+    padding: 1rem; /* Adjusted padding */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem; /* Reduced gap */
+    border: 2px solid var(--border-color); /* Added border */
+    border-radius: 0.5rem; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for better visibility */
+    z-index: 1100;
+}
+
+.message span {
+    font-size: 18px; /* Reduced font size */
+    color: var(--black);
+}
+
+.message i {
+    cursor: pointer;
+    color: var(--red);
+    font-size: 1.8rem; /* Reduced icon size */
+}
+
+.message i:hover {
+    color: var(--black);
+}
+
+/* Empty Message Styling */
+.empty {
+    padding: 1rem; /* Reduced padding */
+    background-color: var(--white);
+    border: 1px solid var(--border-color); /* Border for empty message */
+    box-shadow: var(--box-shadow);
+    text-align: center;
+    color: var(--red);
+    border-radius: 0.4rem; /* Reduced border-radius */
+    font-size: 1.4rem; /* Adjusted font size */
+    text-transform: capitalize;
+}
+
+/* Disabled Styling */
+.disabled {
+    pointer-events: none;
+    user-select: none;
+    opacity: 0.5;
+}
+
+/* Keyframes for Fade In */
+@keyframes fadeIn {
+    0% {
+        transform: translateY(0); /* Adjusted for smaller layout */
+    }
+}
+
+#menu-btn {
+    display: none;
+}
